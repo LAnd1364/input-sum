@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DAF7A6;
+}
+.quantity-box {
+  display: flex;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none; /*------------ !important -------------*/
+  margin: 0;
+}
+input[type=number]
+{
+  -moz-appearance: textfield; /*------------ !important -------------*/
+}
+
+.quantity input {
+  width: 100px;
+  height: 100px;
+  font-family: sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: rgba(54, 143, 139, .8);
+  text-align: center;
+  border: 3px solid rgba(54, 143, 139, .8);
+  border-radius: 8px;
+  margin: 0 15px;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 15px 0;
+  width: 100px;
+  border: 2px solid rgba(54, 143, 139, .8);
+}
+
+.quantity-button {
+  cursor: pointer;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  color: rgba(54, 143, 139, .8);
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 800;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  border-right: 1px solid rgba(54, 143, 139, .8);
+}
+
+.quantity-button.quantity-down {
+  border-left: 1px solid rgba(54, 143, 139, .8);
+}
+
+.sum {
+  max-width: 164px;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #368f8b;
+  opacity: .8;
+  padding-bottom: 35px;
+  padding: 0 0 40px 30px;
+}
